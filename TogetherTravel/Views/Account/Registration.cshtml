@@ -1,0 +1,72 @@
+﻿@model TogetherTravel.ViewModels.RegistrationUserViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-head">
+            <h4 class="modal-title">
+                Регистрация
+                <button type="button" class="close" data-dissmis="modal"></button>
+            </h4>
+        </div>
+        @using (Ajax.BeginForm("Registration", new AjaxOptions
+        {
+            OnBegin = "registrationBegin",
+            OnSuccess = "registrationSuccess",
+            OnFailure = "registrationFail",
+            HttpMethod = "POST",
+            UpdateTargetId = "modalContainer"
+        }))
+        {
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label class="control-label">
+                                <span class="text-danger">*</span>
+                                Имя
+                            </label>
+                        </div>
+                        <div class="col-xs-8">
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label class="control-label">
+                                <span class="text-danger">*</span>
+                                Фамилия
+                            </label>
+                            <div class="col-xs-8">
+                                @Html.TextBoxFor(model => model.Password, new { @class = "form-control input-sm"})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label class="control-label">
+                                Дата рождения
+                            </label>
+                        </div>
+                        <div class="col-xs-8">
+                            @Html.TextBoxFor(model => model.ConfirmPassword, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dissmis="modal">
+                    Отмена
+                </button>
+                <button type="submit" class="btn btn-success btn-sm">
+                    Отправить
+                </button>
+            </div>        
+        }
+    </div>
+</div>
+
+<script src="@AssetsProvider.Instance().Assets.accountRegistration.js"></script>

@@ -47,4 +47,29 @@ import SearchCompany from "../../modules/searchCompany/searchCompany.js";
         usersUrl: usersUrl,
         googleApiKey: googleApiKey
     });
+
+    const modalContainer = document.getElementById("modalContainer");
+    const accountContainer = document.getElementById("accountContainer");
+    const registerUrl = accountContainer.dataset.registrationUrl;
+    const loginUrl = accountContainer.dataset.loginUrl;
+
+    document.getElementById("registrationButton")
+        .addEventListener("click",
+            function(e) {
+                $.get(registerUrl,
+                    function(html) {
+                        modalContainer.innerHTML = html;
+                        $(modalContainer).show();
+                    });
+            });
+
+    document.getElementById("loginButton")
+        .addEventListener("click",
+            function(e) {
+                $.get(loginUrl,
+                    function(html) {
+                        modalContainer.innerHTML = html;
+                        $(modalContainer).show();
+                    });
+            });
 }());

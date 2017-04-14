@@ -44,7 +44,8 @@ namespace TogetherTravel.Migrations
                 };
                 return user;
             });
-            context.Users.AddRange(users);
+            foreach (var user in users)
+                context.Users.Add(user);
             context.SaveChanges();
         }
     }

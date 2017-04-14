@@ -1,0 +1,58 @@
+﻿@model TogetherTravel.ViewModels.LoginUserViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-head">
+            <h4 class="modal-titile">
+                Вход
+                <button class="close" data-dissmis="modal"></button>
+            </h4>
+        </div>
+        @using (Ajax.BeginForm("Login", new AjaxOptions
+        {
+            HttpMethod = "POST",
+            OnBegin = "beginLogin",
+            OnSuccess = "successLogin",
+            OnFailure = "fainLogin",
+            UpdateTargetId = "modalContainer"
+        }))
+        {
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label class="control-label">
+                                Логин
+                            </label>
+                        </div>
+                        <div class="col-xs-8">
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label class="control-label">
+                                Пароль
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dissmis="modal">
+                    Отмена
+                </button>
+                <button type="submit" class="btn btn-success">
+                    Отправить
+                </button>
+            </div>   
+        }
+    </div>
+</div>

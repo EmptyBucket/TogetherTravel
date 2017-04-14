@@ -17,7 +17,7 @@ export function sendMessage(url, message, chatId) {
         $.post(url, { message: message, chatId: chatId },
             function(e) {
                 dispatch({
-                    type: ActionTypes.SendMessage,
+                    type: ActionsTypes.SendMessage,
                     message: message,
                     chatId: chatId
                     });
@@ -27,7 +27,7 @@ export function sendMessage(url, message, chatId) {
 
 export function receiveMessage(message, chatId) {
     return {
-        type: ActionTypes.ReceiveMessage,
+        type: ActionsTypes.ReceiveMessage,
         message: message,
         chatId
     };
@@ -38,7 +38,7 @@ export function addChat(url, chat) {
         $.post(url, { chat },
             function(e) {
                 dispatch({
-                    type: ActionTypes.AddChat,
+                    type: ActionsTypes.AddChat,
                     chat: chat
                     });
             });
@@ -50,7 +50,7 @@ export function removeChat(url, chatId) {
         $.post(url, { chatId: chatId },
             function(e) {
                 dispatch({
-                    type: ActionTypes.RemoveChat,
+                    type: ActionsTypes.RemoveChat,
                     chatId: chatId
                 });
             });
