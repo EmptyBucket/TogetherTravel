@@ -1,0 +1,75 @@
+﻿@using System.Configuration
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles
+{
+
+}
+
+<div class="menu container-fluid">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2 style="color: white">
+                Together Travel
+            </h2>
+        </div>
+        <div class="col-xs-offset-4 col-xs-4">
+            <ul class="nav nav-pills nav-justified">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                        Поиск
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sign-in"></i>
+                        Вход
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user-plus"></i>
+                        Регистрация
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<figure class="header-figure">
+    <figcaption class="header__caption">
+    </figcaption>
+    <img src="~/app/layout/index/content/background.jpg" alt="background" class="header__img"/>
+    <img src="~/app/layout/index/content/animated-sheet.png" alt="animated-sheet" 
+            class="header__animated-sheet"/>
+    <div class="header__sheet"></div>
+</figure>
+<div class="alert alert-info text-center">
+    Получите незабываемый опыт путешествий или просто весело проведите
+     время в новой компании. Познакомьтесь с новыми людьми.
+    Поделитесь своими впечатлениями с другими
+</div>
+<div class="container-fluid map-chat">
+    <div class="row">
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h1 class="panel-title text-center">
+                        Найти компанию
+                    </h1>
+                </div>
+                <div class="panel-body">
+                    <div id="searchCompany" data-users-url="@Url.Action("GetUsers")" data-google-api-key="@ConfigurationManager.AppSettings["GoogleMapsApiKey"]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="@AssetsProvider.Instance().Assets.homeIndex.js"></script>
+}

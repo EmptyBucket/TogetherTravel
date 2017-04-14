@@ -1,0 +1,84 @@
+.header__img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    max-width: 100%;
+    z-index: 1;
+    background-image: url("./content/background.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-left: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header__animated-sheet {
+    background-image: url("./content/animated-sheet.png");
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100%;
+    max-width: 100%;
+    z-index: 2;
+    background-size: cover;
+    background-position: 50% 0;
+    padding-left: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header__sheet {
+    background: #AABCFF;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    content: " ";
+}
+
+.header__caption {
+    color: #D0DAFF;
+}
+
+.header-figure {
+    background: #AABCFF;
+    display: block;
+    height: calc(75vh);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: transparent;
+}
+
+.menu.menu_moved {
+    background: white;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu.menu_moved a {
+    color: blue;
+}

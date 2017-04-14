@@ -1,0 +1,13 @@
+E:\Projects\RuTravel\DataBase\bin\Debug\DataBase.dll.config
+E:\Projects\RuTravel\DataBase\bin\Debug\DataBase.dll
+E:\Projects\RuTravel\DataBase\bin\Debug\DataBase.pdb
+E:\Projects\RuTravel\DataBase\bin\Debug\EntityFramework.dll
+E:\Projects\RuTravel\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\RuTravel\DataBase\bin\Debug\RandomNameGeneratorLibrary.dll
+E:\Projects\RuTravel\DataBase\bin\Debug\EntityFramework.xml
+E:\Projects\RuTravel\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\RuTravel\DataBase\bin\Debug\ru\EntityFramework.resources.dll
+E:\Projects\RuTravel\DataBase\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\Projects\RuTravel\DataBase\obj\Debug\DataBase.dll
+E:\Projects\RuTravel\DataBase\obj\Debug\DataBase.pdb
+E:\Projects\RuTravel\DataBase\obj\Debug\DataBase.csprojResolveAssemblyReference.cache
