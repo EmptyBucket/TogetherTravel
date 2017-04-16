@@ -20,7 +20,7 @@ namespace TogetherTravel
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie
             });
-            appBuilder.MapSignalR();
+            //appBuilder.MapSignalR();
         }
     }
 }

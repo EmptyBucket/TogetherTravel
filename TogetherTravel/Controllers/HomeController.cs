@@ -1,7 +1,9 @@
 ﻿using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using DataBase;
 using DataBase.Services;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace TogetherTravel.Controllers
 {
@@ -12,12 +14,17 @@ namespace TogetherTravel.Controllers
         [HttpPost]
         public ActionResult GetUsers()
         {
-            using (var togetherTravelContext = new TogetherTravelContext())
-            {
-                var userService = new UserService(togetherTravelContext);
-                var users = userService.GetUsers().ToArray();
-                return Json(users);
-            }
+            var context = HttpContext.GetOwinContext().Get<TogetherTravelContext>();
+            var userService = new UserService(context);
+            var users = userService.GetUsers()
+                .Select(user => new
+                {
+                    user.FirstName,
+                    user.SecondName,
+                    user.LatitudeCoord,
+                    user.LongitudeCoord
+                });
+            return Json(users);
         }
     }
 }

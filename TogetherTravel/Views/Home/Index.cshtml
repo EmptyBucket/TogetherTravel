@@ -54,23 +54,19 @@
      время в новой компании. Познакомьтесь с новыми людьми.
     Поделитесь своими впечатлениями с другими
 </div>
-<div class="container-fluid map-chat">
-    <div class="row">
-        <div class="col-xs-offset-3 col-xs-6">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h1 class="panel-title text-center">
-                        Найти компанию
-                    </h1>
-                </div>
-                <div class="panel-body">
-                    <div id="searchCompany" data-users-url="@Url.Action("GetUsers")" data-google-api-key="@ConfigurationManager.AppSettings["GoogleMapsApiKey"]"></div>
-                </div>
-            </div>
+<div class="container map-chat">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h1 class="panel-title text-center">
+                Найти компанию
+            </h1>
+        </div>
+        <div class="panel-body">
+            <div id="searchCompany" data-users-url="@Url.Action("GetUsers")" data-google-api-key="@ConfigurationManager.AppSettings["GoogleMapsApiKey"]"></div>
         </div>
     </div>
 </div>
-<div class="modal-dialog" id="modalContainer"></div>
+<div class="modal fade" id="modalContainer"></div>
 
 @section scripts
 {

@@ -36,6 +36,7 @@ namespace TogetherTravel.Migrations
                 var latitudeCoord = random.NextDouble() * 170 - 85;
                 var user = new User
                 {
+                    UserName = firstName + secondName,
                     SecondName = secondName,
                     FirstName = firstName,
                     BirthDay = birthDay,

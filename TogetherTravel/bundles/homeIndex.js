@@ -11877,9 +11877,9 @@ function SearchCompany(options) {
         var profile = new _profile2.default({
             elem: profileElem
         });
-        var privateChat = new _privateChat2.default({
-            elem: privateChatElem
-        });
+        //const privateChat = new PrivateChat({
+        //    elem: privateChatElem
+        //});
     }
 
     render();
@@ -12003,14 +12003,14 @@ __webpack_require__(150);
     document.getElementById("registrationButton").addEventListener("click", function (e) {
         $.get(registerUrl, function (html) {
             modalContainer.innerHTML = html;
-            $(modalContainer).show();
+            $(modalContainer).modal("toggle");
         });
     });
 
     document.getElementById("loginButton").addEventListener("click", function (e) {
         $.get(loginUrl, function (html) {
             modalContainer.innerHTML = html;
-            $(modalContainer).show();
+            $(modalContainer).modal("show");
         });
     });
 })();

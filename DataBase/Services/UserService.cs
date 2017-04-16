@@ -13,5 +13,11 @@ namespace DataBase.Services
         }
 
         public IQueryable<User> GetUsers() => _context.Users;
+
+        public void AddUser(User user)
+        {
+            _context.Users.Add(user);
+            _context.SaveChanges();
+        }
     }
 }

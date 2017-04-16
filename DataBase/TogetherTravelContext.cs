@@ -1,12 +1,15 @@
 ﻿using System.Data.Entity;
+using DataBase.Models.Chat;
+using DataBase.Models.Message;
 using DataBase.Models.User;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace DataBase
 {
-    public class TogetherTravelContext : DbContext
+    public class TogetherTravelContext : IdentityDbContext<User>
     {
         public TogetherTravelContext()
-            : base("name=TogetherTravel")
+            : base("name=TogetherTravel", false)
         {
         }
 
@@ -14,8 +17,11 @@ namespace DataBase
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Configurations.Add(new UserConfiguration());
+            modelBuilder.Configurations.Add(new ChatConfiguration());
+            modelBuilder.Configurations.Add(new MessageConfiguration());
         }
 
-        public virtual DbSet<User> Users { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Chat> Chats { get; set; }
     }
 }

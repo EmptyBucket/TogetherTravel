@@ -32,9 +32,9 @@ export default function SearchCompany(options) {
         const profile = new Profile({
             elem: profileElem
         });
-        const privateChat = new PrivateChat({
-            elem: privateChatElem
-        });
+        //const privateChat = new PrivateChat({
+        //    elem: privateChatElem
+        //});
     }
 
     render();

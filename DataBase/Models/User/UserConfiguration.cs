@@ -6,17 +6,18 @@ namespace DataBase.Models.User
     {
         public UserConfiguration()
         {
-            HasKey(user => user.Id);
             Property(user => user.FirstName)
-                .IsRequired()
+                .IsOptional()
                 .HasMaxLength(200);
             Property(user => user.SecondName)
-                .IsRequired()
+                .IsOptional()
                 .HasMaxLength(200);
+            Property(user => user.BirthDay)
+                .IsOptional();
             Property(user => user.LatitudeCoord)
-                .IsRequired();
+                .IsOptional();
             Property(user => user.LongitudeCoord)
-                .IsRequired();
+                .IsOptional();
         }
     }
 }

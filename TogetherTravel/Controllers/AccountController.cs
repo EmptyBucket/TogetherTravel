@@ -16,24 +16,16 @@ namespace TogetherTravel.Controllers
 
         private ApplicationSignInManager _signInManager;
 
-        public AccountController(IMapper mapper, ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        public AccountController(IMapper mapper)
         {
-            UserManager = userManager;
-            SignInManager = signInManager;
             _mapper = mapper;
         }
 
-        public ApplicationSignInManager SignInManager
-        {
-            get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-            private set => _signInManager = value;
-        }
+        public ApplicationSignInManager SignInManager => _signInManager ?? 
+            (_signInManager = HttpContext.GetOwinContext().Get<ApplicationSignInManager>());
 
-        public ApplicationUserManager UserManager
-        {
-            get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            private set => _userManager = value;
-        }
+        public ApplicationUserManager UserManager => _userManager ?? 
+            (_userManager = HttpContext.GetOwinContext().Get<ApplicationUserManager>());
 
         [AllowAnonymous]
         public ActionResult Registration() => View();

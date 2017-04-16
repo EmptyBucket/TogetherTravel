@@ -11,13 +11,12 @@ namespace DataBase.Models.Chat
                 .IsRequired()
                 .IsUnicode()
                 .HasMaxLength(200);
-            Property(chat => chat.UserCreatorId)
-                .IsRequired();
             Property(chat => chat.DateCreated)
                 .IsRequired();
 
             HasRequired(chat => chat.UserCreator)
-                .WithMany(user => user.OwnerChats);
+                .WithMany(user => user.OwnerChats)
+                .WillCascadeOnDelete(false);
             HasMany(chat => chat.Users)
                 .WithMany(user => user.Chats)
                 .Map(uc =>
@@ -27,7 +26,8 @@ namespace DataBase.Models.Chat
                     uc.MapLeftKey("ChatId");
                 });
             HasMany(chat => chat.Messages)
-                .WithRequired(message => message.Chat);
+                .WithRequired(message => message.Chat)
+                .WillCascadeOnDelete(false);
         }
     }
 }
