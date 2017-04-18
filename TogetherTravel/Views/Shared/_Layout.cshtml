@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TogetherTravel</title>
-    @RenderSection("styles", required: false)
+    @RenderSection("styles", false)
 </head>
 <body>
 @RenderBody()
-<script src="@AssetsProvider.Instance().Assets.common.js"></script>
-<script src="@AssetsProvider.Instance().Assets.sharedLayout.js"></script>
-@RenderSection("scripts", required: false)
+<div class="modal fade" id="modalContainer"></div>
+<script src="@AssetsProvider.Instance.Assets.common.js"></script>
+<script src="@AssetsProvider.Instance.Assets.sharedLayout.js"></script>
+@RenderSection("scripts", false)
 </body>
 </html>

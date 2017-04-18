@@ -41,7 +41,7 @@ namespace TogetherTravel.Controllers
                 if (identityAsync.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, true, false);
-                    return RedirectToAction("Index", "Home");
+                    return View(model);
                 }
                 foreach (var error in identityAsync.Errors)
                     ModelState.AddModelError(string.Empty, error);
@@ -60,7 +60,7 @@ namespace TogetherTravel.Controllers
             {
                 var signInResult = await SignInManager.PasswordSignInAsync(model.UserName, model.Password, true, false);
                 if (signInResult == SignInStatus.Success)
-                    return RedirectToAction("Index", "Home");
+                    return View(model);
             }
             return View(model);
         }

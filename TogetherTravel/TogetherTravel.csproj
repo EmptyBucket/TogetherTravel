@@ -180,9 +180,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\base\body.css" />
-    <Content Include="app\layout\index\index.js" />
+    <Content Include="app\layout\account\login.css" />
+    <Content Include="app\layout\account\login.js" />
+    <Content Include="app\layout\home\index.js" />
     <Content Include="app\layout\layout\layout.css" />
     <Content Include="app\layout\layout\layout.js" />
+    <Content Include="app\layout\account\registration.css" />
+    <Content Include="app\layout\account\registration.js" />
     <Content Include="app\modules\privateChat\actions\privateChat.js" />
     <Content Include="app\modules\privateChat\actionsTypes.js" />
     <Content Include="app\modules\privateChat\components\privateChat\privateChat.jsx" />
@@ -193,9 +197,9 @@
     <Content Include="app\modules\privateChat\reducers\privateChat.js" />
     <Content Include="app\modules\profile\profile.css" />
     <Content Include="app\modules\profile\profile.js" />
-    <Content Include="app\layout\index\content\background.jpg" />
-    <Content Include="app\layout\index\content\animated-sheet.jpg" />
-    <Content Include="app\layout\index\content\animated-sheet.png" />
+    <Content Include="app\layout\home\content\background.jpg" />
+    <Content Include="app\layout\home\content\animated-sheet.jpg" />
+    <Content Include="app\layout\home\content\animated-sheet.png" />
     <Content Include="app\modules\map\content\m1.png" />
     <Content Include="app\modules\map\content\m2.png" />
     <Content Include="app\modules\map\content\m3.png" />
@@ -218,7 +222,7 @@
     <Content Include="bundles\sharedLayout.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="app\layout\index\index.css" />
+    <Content Include="app\layout\home\index.css" />
     <Content Include="packages.config" />
     <Content Include=".bootstraprc.json" />
     <Content Include="Views\Home\Index.cshtml" />

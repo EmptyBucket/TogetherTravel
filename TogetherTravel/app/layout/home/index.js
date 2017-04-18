@@ -58,7 +58,7 @@ import SearchCompany from "../../modules/searchCompany/searchCompany.js";
             function(e) {
                 $.get(registerUrl,
                     function(html) {
-                        modalContainer.innerHTML = html;
+                        $(modalContainer).html(html);
                         $(modalContainer).modal("toggle");
                     });
             });
@@ -68,7 +68,7 @@ import SearchCompany from "../../modules/searchCompany/searchCompany.js";
             function(e) {
                 $.get(loginUrl,
                     function(html) {
-                        modalContainer.innerHTML = html;
+                        $(modalContainer).html(html);
                         $(modalContainer).modal("show");
                     });
             });

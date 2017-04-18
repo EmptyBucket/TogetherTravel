@@ -19,7 +19,9 @@ module.exports = {
     entry: {
         sharedLayout: [ "bootstrap-loader/lib/bootstrap.loader" + 
             "?" + /*"extractStyles"*/  `&configFilePath=${__dirname}/.bootstraprc.json!bootstrap-loader/no-op.js`, "./layout/layout/layout.js" ],
-        homeIndex: "./layout/index/index.js"
+        homeIndex: "./layout/home/index.js",
+        accountRegistration: "./layout/account/registration.js",
+        accountLogin: "./layout/account/login.js"
     },
     output: {
         path: Path.join(__dirname, "bundles"),

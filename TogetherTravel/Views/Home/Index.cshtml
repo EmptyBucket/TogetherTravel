@@ -22,19 +22,19 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-search"></i>
-                        Поиск
+                        Search
                     </a>
                 </li>
                 <li>
                     <a href="#" id="loginButton">
                         <i class="fa fa-sign-in"></i>
-                        Вход
+                        Login
                     </a>
                 </li>
                 <li>
                     <a href="#" id="registrationButton">
                         <i class="fa fa-user-plus"></i>
-                        Регистрация
+                        Registration
                     </a>
                 </li>
             </ul>
@@ -44,8 +44,8 @@
 <figure class="header-figure">
     <figcaption class="header__caption">
     </figcaption>
-    <img src="~/app/layout/index/content/background.jpg" alt="background" class="header__img"/>
-    <img src="~/app/layout/index/content/animated-sheet.png" alt="animated-sheet" 
+    <img src="~/app/layout/home/content/background.jpg" alt="background" class="header__img"/>
+    <img src="~/app/layout/home/content/animated-sheet.png" alt="animated-sheet" 
             class="header__animated-sheet"/>
     <div class="header__sheet"></div>
 </figure>
@@ -66,9 +66,8 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="modalContainer"></div>
 
 @section scripts
 {
-    <script src="@AssetsProvider.Instance().Assets.homeIndex.js"></script>
+    <script src="@AssetsProvider.Instance.Assets.homeIndex.js"></script>
 }
