@@ -22,8 +22,10 @@
                 UpdateTargetId = "modalContainer"
             }, new { name = "registrationForm" }))
         {
+            @Html.AntiForgeryToken()
             <div class="modal-body">
                 <div class="form-horizontal">
+                    @Html.ValidationSummary(false)
                     <div class="form-group">
                         <label class="col-xs-4 control-label">
                             <span class="text-danger">*</span>

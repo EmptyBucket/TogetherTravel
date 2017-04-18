@@ -32,6 +32,7 @@ namespace TogetherTravel.Controllers
 
         [HttpPost]
         [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Registration(RegistrationUserViewModel model)
         {
             if (ModelState.IsValid)
