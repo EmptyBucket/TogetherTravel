@@ -3,6 +3,7 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using DataBase;
 using DataBase.Models.User;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace TogetherTravel.Migrations
 {
@@ -34,7 +35,7 @@ namespace TogetherTravel.Migrations
                     birthDayDay);
                 var longitudeCoord = random.NextDouble() * 360 - 180;
                 var latitudeCoord = random.NextDouble() * 170 - 85;
-                var user = new User
+                return new User
                 {
                     UserName = firstName + secondName,
                     SecondName = secondName,
@@ -43,10 +44,18 @@ namespace TogetherTravel.Migrations
                     LongitudeCoord = longitudeCoord,
                     LatitudeCoord = latitudeCoord
                 };
-                return user;
             });
             foreach (var user in users)
                 context.Users.Add(user);
+
+            //var roles = new[]
+            //{
+            //    new IdentityRole("Admin"),
+            //    new IdentityRole("User")
+            //};
+            //foreach (var role in roles)
+            //    context.Roles.Add(role);
+
             context.SaveChanges();
         }
     }

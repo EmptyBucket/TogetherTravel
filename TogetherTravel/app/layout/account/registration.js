@@ -2,8 +2,6 @@
 require("jquery-ajax-unobtrusive");
 
 (function() {
-    const modalContainer = document.getElementById("modalContainer");
-
     function disableRegistrationFormBtns() {
         const registrationForm = document.forms.registrationForm;
         registrationForm.elements.submitBtn.disabled = true;
@@ -37,10 +35,11 @@ require("jquery-ajax-unobtrusive");
                 completeRegistrationMessage.classList.add("complete-registration-message_hidden");
             }, 0);
             setTimeout(function() {
-                    completeRegistrationMessage.parentElement.removeChild(completeRegistrationMessage);
-                },
-                5000);
-            $(modalContainer).modal("hide");
+                completeRegistrationMessage.parentElement.removeChild(completeRegistrationMessage);
+            },
+            5000);
+            const homeIndexUrl = registrationForm.dataset.homeIndexUrl;
+            location.assign(homeIndexUrl);
         }
     }
 

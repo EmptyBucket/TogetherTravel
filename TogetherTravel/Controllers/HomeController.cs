@@ -7,11 +7,14 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace TogetherTravel.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index() => View();
 
         [HttpPost]
+        [AllowAnonymous]
         public ActionResult GetUsers()
         {
             var context = HttpContext.GetOwinContext().Get<TogetherTravelContext>();

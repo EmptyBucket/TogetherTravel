@@ -9,7 +9,8 @@ namespace TogetherTravel.Mappers
         public RegistrationProfile()
         {
             CreateMap<RegistrationUserViewModel, User>()
-                .ForMember(user => user.UserName, expression => expression.ResolveUsing(model => model.UserName));
+                .ForMember(user => user.UserName, expression => expression.ResolveUsing(model => model.UserName))
+                .ForMember(user => user.Email, expression => expression.ResolveUsing(model => model.Email));
         }
     }
 }

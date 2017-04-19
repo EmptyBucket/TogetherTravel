@@ -15,5 +15,9 @@ namespace TogetherTravel.ViewModels
         [DataType(DataType.Password)]
         [Compare(nameof(Password), ErrorMessage = "Пароль и его подтверждение не совпадает")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
     }
 }

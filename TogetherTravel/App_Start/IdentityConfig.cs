@@ -11,6 +11,20 @@ using Microsoft.Owin.Security;
 
 namespace TogetherTravel
 {
+    public class ApplicationRoleManager : RoleManager<IdentityRole>
+    {
+        public ApplicationRoleManager(IRoleStore<IdentityRole, string> store) : base(store)
+        {
+        }
+
+        public static ApplicationRoleManager Create(IdentityFactoryOptions<ApplicationRoleManager> options,
+            IOwinContext owinContext)
+        {
+            var roleManager = new ApplicationRoleManager(new RoleStore<IdentityRole>(owinContext.Get<TogetherTravelContext>()));
+            return roleManager;
+        }
+    }
+
     public class ApplicationUserManager : UserManager<User>
     {
         public ApplicationUserManager(IUserStore<User> store) : base(store)

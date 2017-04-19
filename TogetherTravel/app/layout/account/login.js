@@ -1,15 +1,14 @@
 ﻿require("./login.css");
 
-(function () {
-    const loginForm = document.forms.loginForm;
-    const modalContainer = document.getElementById("modal-contaienr");
-
+(function() {
     function disableLoginBtns() {
+        const loginForm = document.forms.loginForm;
         loginForm.elements.loginBtn.disable = true;
         loginForm.elements.cancelBtn.disable = true;
     }
 
     function enableLoginBtns() {
+        const loginForm = document.forms.loginForm;
         loginForm.elements.loginBtn.disable = false;
         loginForm.elements.cancelBtn.disable = false;
     }
@@ -19,12 +18,28 @@
     }
 
     function successLogin() {
+        const loginForm = document.forms.loginForm;
         if (loginForm.getElementsByClassName("field-validation-error").length ||
             loginForm.getElementsByClassName("validation-summary-errors").length ||
             loginForm.getElementsByClassName("input-validation-error").length) {
             enableLoginBtns();
         } else {
-            modalContainer.modal("hide");
+            const completeLoginMessage = document.createElement("div");
+            completeLoginMessage.textContent = "You have successfully registered";
+            completeLoginMessage.classList.add("alert",
+                "alert-info",
+                "complete-login-message");
+            document.body.appendChild(completeLoginMessage);
+            setTimeout(function() {
+                    completeLoginMessage.classList.add("complete-login-message_hidden");
+                },
+                0);
+            setTimeout(function() {
+                    completeLoginMessage.parentElement.removeChild(completeLoginMessage);
+                },
+                5000);
+            const homeIndexUrl = loginForm.dataset.homeIndexUrl;
+            location.assign(homeIndexUrl);
         }
     }
 

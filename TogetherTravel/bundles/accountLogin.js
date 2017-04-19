@@ -36,15 +36,14 @@ if(false) {
 __webpack_require__(151);
 
 (function () {
-    var loginForm = document.forms.loginForm;
-    var modalContainer = document.getElementById("modal-contaienr");
-
     function disableLoginBtns() {
+        var loginForm = document.forms.loginForm;
         loginForm.elements.loginBtn.disable = true;
         loginForm.elements.cancelBtn.disable = true;
     }
 
     function enableLoginBtns() {
+        var loginForm = document.forms.loginForm;
         loginForm.elements.loginBtn.disable = false;
         loginForm.elements.cancelBtn.disable = false;
     }
@@ -54,10 +53,22 @@ __webpack_require__(151);
     }
 
     function successLogin() {
+        var loginForm = document.forms.loginForm;
         if (loginForm.getElementsByClassName("field-validation-error").length || loginForm.getElementsByClassName("validation-summary-errors").length || loginForm.getElementsByClassName("input-validation-error").length) {
             enableLoginBtns();
         } else {
-            modalContainer.modal("hide");
+            var completeLoginMessage = document.createElement("div");
+            completeLoginMessage.textContent = "You have successfully registered";
+            completeLoginMessage.classList.add("alert", "alert-info", "complete-login-message");
+            document.body.appendChild(completeLoginMessage);
+            setTimeout(function () {
+                completeLoginMessage.classList.add("complete-login-message_hidden");
+            }, 0);
+            setTimeout(function () {
+                completeLoginMessage.parentElement.removeChild(completeLoginMessage);
+            }, 5000);
+            var homeIndexUrl = loginForm.dataset.homeIndexUrl;
+            location.assign(homeIndexUrl);
         }
     }
 
@@ -80,7 +91,7 @@ exports = module.exports = __webpack_require__(13)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".complete-login-message {\r\n    position: fixed;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: 0;\r\n    -ms-opacity: 1;\r\n    opacity: 1;\r\n    z-index: 10000;\r\n    transition: opacity 5s ease-in-out;\r\n}\r\n\r\n.complete-login-message_hidden {\r\n    -ms-opacity: 0;\r\n    opacity: 0;\r\n}\r\n", ""]);
 
 // exports
 

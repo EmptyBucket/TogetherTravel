@@ -24,21 +24,6 @@ import SearchCompany from "../../modules/searchCompany/searchCompany.js";
             }
         });
 
-    var menu = document.getElementsByClassName("menu")[0];
-    var isWhiteBackground = false;
-    document.addEventListener("scroll",
-        function(e) {
-            if (window.pageYOffset > 0) {
-                if (!isWhiteBackground) {
-                    isWhiteBackground = true;
-                    menu.classList.add("menu_moved");
-                }
-            } else if(isWhiteBackground) {
-                isWhiteBackground = false;
-                menu.classList.remove("menu_moved");
-            }
-        });
-
     const searchCompanyElem = document.getElementById("searchCompany");
     const usersUrl = searchCompanyElem.dataset.usersUrl;
     const googleApiKey = searchCompanyElem.dataset.googleApiKey;
@@ -47,29 +32,4 @@ import SearchCompany from "../../modules/searchCompany/searchCompany.js";
         usersUrl: usersUrl,
         googleApiKey: googleApiKey
     });
-
-    const modalContainer = document.getElementById("modalContainer");
-    const accountContainer = document.getElementById("accountContainer");
-    const registerUrl = accountContainer.dataset.registrationUrl;
-    const loginUrl = accountContainer.dataset.loginUrl;
-
-    document.getElementById("registrationButton")
-        .addEventListener("click",
-            function(e) {
-                $.get(registerUrl,
-                    function(html) {
-                        $(modalContainer).html(html);
-                        $(modalContainer).modal("toggle");
-                    });
-            });
-
-    document.getElementById("loginButton")
-        .addEventListener("click",
-            function(e) {
-                $.get(loginUrl,
-                    function(html) {
-                        $(modalContainer).html(html);
-                        $(modalContainer).modal("show");
-                    });
-            });
 }());

@@ -22207,7 +22207,7 @@ webpackContext.id = 154;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+
 
 var _searchCompany = __webpack_require__(148);
 
@@ -22236,20 +22236,6 @@ __webpack_require__(153);
         }
     });
 
-    var menu = document.getElementsByClassName("menu")[0];
-    var isWhiteBackground = false;
-    document.addEventListener("scroll", function (e) {
-        if (window.pageYOffset > 0) {
-            if (!isWhiteBackground) {
-                isWhiteBackground = true;
-                menu.classList.add("menu_moved");
-            }
-        } else if (isWhiteBackground) {
-            isWhiteBackground = false;
-            menu.classList.remove("menu_moved");
-        }
-    });
-
     var searchCompanyElem = document.getElementById("searchCompany");
     var usersUrl = searchCompanyElem.dataset.usersUrl;
     var googleApiKey = searchCompanyElem.dataset.googleApiKey;
@@ -22258,27 +22244,7 @@ __webpack_require__(153);
         usersUrl: usersUrl,
         googleApiKey: googleApiKey
     });
-
-    var modalContainer = document.getElementById("modalContainer");
-    var accountContainer = document.getElementById("accountContainer");
-    var registerUrl = accountContainer.dataset.registrationUrl;
-    var loginUrl = accountContainer.dataset.loginUrl;
-
-    document.getElementById("registrationButton").addEventListener("click", function (e) {
-        $.get(registerUrl, function (html) {
-            $(modalContainer).html(html);
-            $(modalContainer).modal("toggle");
-        });
-    });
-
-    document.getElementById("loginButton").addEventListener("click", function (e) {
-        $.get(loginUrl, function (html) {
-            $(modalContainer).html(html);
-            $(modalContainer).modal("show");
-        });
-    });
 })();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
 /* 158 */
@@ -23963,7 +23929,7 @@ exports = module.exports = __webpack_require__(13)(undefined);
 
 
 // module
-exports.push([module.i, ".header__img {\r\n    display: block;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-height: 100%;\r\n    max-width: 100%;\r\n    z-index: 1;\r\n    background-image: url(" + __webpack_require__(262) + ");\r\n    background-size: cover;\r\n    background-position: 50% 0;\r\n    padding-left: 100%;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.header__animated-sheet {\r\n    background-image: url(" + __webpack_require__(261) + ");\r\n    display: block;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    min-height: 100%;\r\n    max-width: 100%;\r\n    z-index: 2;\r\n    background-size: cover;\r\n    background-position: 50% 0;\r\n    padding-left: 100%;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.header__sheet {\r\n    background: #AABCFF;\r\n    z-index: 3;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    opacity: 0.2;\r\n    content: \" \";\r\n}\r\n\r\n.header__caption {\r\n    color: #D0DAFF;\r\n}\r\n\r\n.header-figure {\r\n    background: #AABCFF;\r\n    display: block;\r\n    height: calc(75vh);\r\n    position: relative;\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    overflow: hidden;\r\n}\r\n\r\n.menu {\r\n    display: block;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 10;\r\n    background: transparent;\r\n}\r\n\r\n.menu.menu_moved {\r\n    background: white;\r\n}\r\n\r\n.menu a {\r\n    color: white;\r\n}\r\n\r\n.menu.menu_moved a {\r\n    color: blue;\r\n}", ""]);
+exports.push([module.i, ".header__img {\r\n    display: block;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-height: 100%;\r\n    max-width: 100%;\r\n    z-index: 1;\r\n    background-image: url(" + __webpack_require__(262) + ");\r\n    background-size: cover;\r\n    background-position: 50% 0;\r\n    padding-left: 100%;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.header__animated-sheet {\r\n    background-image: url(" + __webpack_require__(261) + ");\r\n    display: block;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    min-height: 100%;\r\n    max-width: 100%;\r\n    z-index: 2;\r\n    background-size: cover;\r\n    background-position: 50% 0;\r\n    padding-left: 100%;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.header__sheet {\r\n    background: #AABCFF;\r\n    z-index: 3;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    opacity: 0.2;\r\n    content: \" \";\r\n}\r\n\r\n.header__caption {\r\n    color: #D0DAFF;\r\n}\r\n\r\n.header-figure {\r\n    background: #AABCFF;\r\n    display: block;\r\n    height: calc(75vh);\r\n    position: relative;\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    overflow: hidden;\r\n}", ""]);
 
 // exports
 

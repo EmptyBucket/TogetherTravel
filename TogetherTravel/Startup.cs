@@ -15,6 +15,7 @@ namespace TogetherTravel
             appBuilder.CreatePerOwinContext(() => new TogetherTravelContext());
             appBuilder.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             appBuilder.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
+            appBuilder.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);
 
             appBuilder.UseCookieAuthentication(new CookieAuthenticationOptions
             {

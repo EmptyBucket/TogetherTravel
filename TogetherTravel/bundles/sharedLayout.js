@@ -11,11 +11,47 @@ module.exports = __webpack_require__.p + "glyphicons-halflings-regular.eot";
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 __webpack_require__(398);
 __webpack_require__(397);
 __webpack_require__(278);
+
+(function () {
+    var modalContainer = document.getElementById("modalContainer");
+    var accountContainer = document.getElementById("accountContainer");
+    var registerUrl = accountContainer.dataset.accountRegistrationUrl;
+    var loginUrl = accountContainer.dataset.accountLoginUrl;
+
+    document.getElementById("registrationButton").addEventListener("click", function (e) {
+        $.get(registerUrl, function (html) {
+            $(modalContainer).html(html);
+            $(modalContainer).modal("toggle");
+        });
+    });
+
+    document.getElementById("loginButton").addEventListener("click", function (e) {
+        $.get(loginUrl, function (html) {
+            $(modalContainer).html(html);
+            $(modalContainer).modal("show");
+        });
+    });
+
+    var menu = document.getElementsByClassName("navbar")[0];
+    var isWhiteBackground = false;
+    document.addEventListener("scroll", function (e) {
+        if (window.pageYOffset > 0) {
+            if (!isWhiteBackground) {
+                isWhiteBackground = true;
+                menu.classList.add("navbar-movable_moving");
+            }
+        } else if (isWhiteBackground) {
+            isWhiteBackground = false;
+            menu.classList.remove("navbar-movable_moving");
+        }
+    });
+})();
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
 
@@ -2514,7 +2550,7 @@ exports = module.exports = __webpack_require__(13)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".navbar {\r\n    margin-bottom: 0;\r\n    border: 0;\r\n}\r\n\r\n.navbar-movable {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 10;\r\n    background-color: transparent;\r\n    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;\r\n}\r\n\r\n.navbar-movable .navbar-brand {\r\n        color: #eee;\r\n    }\r\n\r\n        .navbar-movable .navbar-brand:hover,\r\n        .navbar-movable .navbar-brand:focus {\r\n            color: #cecece;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable .navbar-text {\r\n        color: #eee;\r\n    }\r\n\r\n    .navbar-movable .navbar-nav > li > a {\r\n        color: #eee;\r\n    }\r\n\r\n        .navbar-movable .navbar-nav > li > a:hover,\r\n        .navbar-movable .navbar-nav > li > a:focus {\r\n            color: #aaa;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable .navbar-nav > .active > a,\r\n    .navbar-movable .navbar-nav > .active > a:hover,\r\n    .navbar-movable .navbar-nav > .active > a:focus {\r\n        color: #ccc;\r\n        background-color: #fff;\r\n    }\r\n\r\n    .navbar-movable .navbar-nav > .disabled > a,\r\n    .navbar-movable .navbar-nav > .disabled > a:hover,\r\n    .navbar-movable .navbar-nav > .disabled > a:focus {\r\n        color: #ccc;\r\n        background-color: transparent;\r\n    }\r\n\r\n    .navbar-movable .navbar-toggle {\r\n        border-color: #eee;\r\n    }\r\n\r\n        .navbar-movable .navbar-toggle:hover,\r\n        .navbar-movable .navbar-toggle:focus {\r\n            background-color: #eee;\r\n        }\r\n\r\n        .navbar-movable .navbar-toggle .icon-bar {\r\n            background-color: #f7f7f7;\r\n        }\r\n\r\n    .navbar-movable .navbar-collapse,\r\n    .navbar-movable .navbar-form {\r\n        border-color: #fff;\r\n    }\r\n\r\n    .navbar-movable .navbar-nav > .open > a,\r\n    .navbar-movable .navbar-nav > .open > a:hover,\r\n    .navbar-movable .navbar-nav > .open > a:focus {\r\n        color: #ccc;\r\n        background-color: #fff;\r\n    }\r\n\r\n@media (max-width: 767px) {\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > li > a {\r\n        color: #eee;\r\n    }\r\n\r\n        .navbar-movable .navbar-nav .open .dropdown-menu > li > a:hover,\r\n        .navbar-movable .navbar-nav .open .dropdown-menu > li > a:focus {\r\n            color: #aaa;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .active > a,\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .active > a:hover,\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .active > a:focus {\r\n        color: #ccc;\r\n        background-color: #fff;\r\n    }\r\n\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .disabled > a,\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .disabled > a:hover,\r\n    .navbar-movable .navbar-nav .open .dropdown-menu > .disabled > a:focus {\r\n        color: #ccc;\r\n        background-color: transparent;\r\n    }\r\n}\r\n\r\n.navbar-movable .navbar-link {\r\n    color: #eee;\r\n}\r\n\r\n    .navbar-movable .navbar-link:hover {\r\n        color: #aaa;\r\n    }\r\n\r\n.navbar-movable .btn-link {\r\n    color: #eee;\r\n}\r\n\r\n.navbar-movable.navbar-movable_moving {\r\n    position: fixed;\r\n    background-color: #f8f8f8;\r\n}\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-brand {\r\n        color: #777;\r\n    }\r\n\r\n        .navbar-movable.navbar-movable_moving .navbar-brand:hover,\r\n        .navbar-movable.navbar-movable_moving .navbar-brand:focus {\r\n            color: #5e5e5e;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-text {\r\n        color: #777;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > li > a {\r\n        color: #777;\r\n    }\r\n\r\n        .navbar-movable.navbar-movable_moving .navbar-nav > li > a:hover,\r\n        .navbar-movable.navbar-movable_moving .navbar-nav > li > a:focus {\r\n            color: #333;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .active > a,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .active > a:hover,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .active > a:focus {\r\n        color: #555;\r\n        background-color: #e7e7e7;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .disabled > a,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .disabled > a:hover,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .disabled > a:focus {\r\n        color: #ccc;\r\n        background-color: transparent;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-toggle {\r\n        border-color: #ddd;\r\n    }\r\n\r\n        .navbar-movable.navbar-movable_moving .navbar-toggle:hover,\r\n        .navbar-movable.navbar-movable_moving .navbar-toggle:focus {\r\n            background-color: #ddd;\r\n        }\r\n\r\n        .navbar-movable.navbar-movable_moving .navbar-toggle .icon-bar {\r\n            background-color: #888;\r\n        }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-collapse,\r\n    .navbar-movable.navbar-movable_moving .navbar-form {\r\n        border-color: #e7e7e7;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .open > a,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .open > a:hover,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav > .open > a:focus {\r\n        color: #555;\r\n        background-color: #e7e7e7;\r\n    }\r\n\r\n@media (max-width: 767px) {\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > li > a {\r\n        color: #777;\r\n    }\r\n\r\n        .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > li > a:hover,\r\n        .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > li > a:focus {\r\n            color: #333;\r\n            background-color: transparent;\r\n        }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .active > a,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .active > a:hover,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .active > a:focus {\r\n        color: #555;\r\n        background-color: #e7e7e7;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .disabled > a,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .disabled > a:hover,\r\n    .navbar-movable.navbar-movable_moving .navbar-nav .open .dropdown-menu > .disabled > a:focus {\r\n        color: #ccc;\r\n        background-color: transparent;\r\n    }\r\n}\r\n\r\n.navbar-movable.navbar-movable_moving .navbar-link {\r\n    color: #777;\r\n}\r\n\r\n    .navbar-movable.navbar-movable_moving .navbar-link:hover {\r\n        color: #333;\r\n    }\r\n\r\n.navbar-movable.navbar-movable_moving .btn-link {\r\n    color: #777;\r\n}\r\n\r\n    .navbar-movable.navbar-movable_moving .btn-link:hover,\r\n    .navbar-movable.navbar-movable_moving .btn-link:focus {\r\n        color: #333;\r\n    }\r\n\r\n    .navbar-movable.navbar-movable_moving .btn-link[disabled]:hover,\r\n    fieldset[disabled] .navbar-movable.navbar-movable_moving .btn-link:hover,\r\n    .navbar-movable.navbar-movable_moving .btn-link[disabled]:focus,\r\n    fieldset[disabled] .navbar-movable.navbar-movable_moving .btn-link:focus {\r\n        color: #ccc;\r\n    }", ""]);
 
 // exports
 

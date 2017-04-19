@@ -31,14 +31,12 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+
 
 __webpack_require__(152);
 __webpack_require__(423);
 
 (function () {
-    var modalContainer = document.getElementById("modalContainer");
-
     function disableRegistrationFormBtns() {
         var registrationForm = document.forms.registrationForm;
         registrationForm.elements.submitBtn.disabled = true;
@@ -70,7 +68,8 @@ __webpack_require__(423);
             setTimeout(function () {
                 completeRegistrationMessage.parentElement.removeChild(completeRegistrationMessage);
             }, 5000);
-            $(modalContainer).modal("hide");
+            var homeIndexUrl = registrationForm.dataset.homeIndexUrl;
+            location.assign(homeIndexUrl);
         }
     }
 
@@ -82,7 +81,6 @@ __webpack_require__(423);
     window.registrationSuccess = registrationSuccess;
     window.registrationFail = registrationFail;
 })();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
 

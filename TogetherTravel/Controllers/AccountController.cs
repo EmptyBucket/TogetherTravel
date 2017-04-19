@@ -1,9 +1,12 @@
-﻿using System.Threading.Tasks;
+﻿using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
 using DataBase.Models.User;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
 using TogetherTravel.ViewModels;
 
 namespace TogetherTravel.Controllers
@@ -16,6 +19,10 @@ namespace TogetherTravel.Controllers
 
         private ApplicationSignInManager _signInManager;
 
+        private ApplicationRoleManager _roleManager;
+
+        private IAuthenticationManager _autenticationManaber;
+
         public AccountController(IMapper mapper)
         {
             _mapper = mapper;
@@ -26,6 +33,13 @@ namespace TogetherTravel.Controllers
 
         public ApplicationUserManager UserManager => _userManager ?? 
             (_userManager = HttpContext.GetOwinContext().Get<ApplicationUserManager>());
+
+        public ApplicationRoleManager RoleManager => _roleManager ??
+            (_roleManager = HttpContext.GetOwinContext().Get<ApplicationRoleManager>());
+
+        public IAuthenticationManager AuthenticationManager => _autenticationManaber ??
+            (_autenticationManaber = HttpContext.GetOwinContext().Authentication);
+
 
         [AllowAnonymous]
         public ActionResult Registration() => View();
@@ -38,13 +52,19 @@ namespace TogetherTravel.Controllers
             if (ModelState.IsValid)
             {
                 var user = _mapper.Map<User>(model);
-                var identityAsync = await UserManager.CreateAsync(user, model.Password);
-                if (identityAsync.Succeeded)
+                var createdResult = await UserManager.CreateAsync(user, model.Password);
+                if (createdResult.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, true, false);
-                    return View(model);
+                    var roleAddResult = await UserManager.AddToRoleAsync(user.Id, "User");
+                    var identity = await UserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+                    identity.AddClaim(new Claim(ClaimTypes.Email, user.Email));
+                    if (roleAddResult.Succeeded)
+                    {
+                        await SignInManager.SignInAsync(user, true, false);
+                        return View(model);
+                    }
                 }
-                foreach (var error in identityAsync.Errors)
+                foreach (var error in createdResult.Errors)
                     ModelState.AddModelError(string.Empty, error);
             }
             return View(model);
@@ -55,6 +75,7 @@ namespace TogetherTravel.Controllers
 
         [HttpPost]
         [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginUserViewModel model)
         {
             if (ModelState.IsValid)
@@ -64,6 +85,12 @@ namespace TogetherTravel.Controllers
                     return View(model);
             }
             return View(model);
+        }
+
+        public ActionResult LogOut()
+        {
+            AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

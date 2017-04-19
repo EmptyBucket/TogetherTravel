@@ -60,25 +60,3 @@
     border: 0;
     overflow: hidden;
 }
-
-.menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background: transparent;
-}
-
-.menu.menu_moved {
-    background: white;
-}
-
-.menu a {
-    color: white;
-}
-
-.menu.menu_moved a {
-    color: blue;
-}
