@@ -2,7 +2,7 @@ using Ninject.Modules;
 using TogetherTravel.Modules;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(TogetherTravel.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(TogetherTravel.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(TogetherTravel.App_Start.NinjectWebCommon), "Stop")]
 
 namespace TogetherTravel.App_Start
 {
@@ -66,7 +66,8 @@ namespace TogetherTravel.App_Start
         {
             kernel.Load(new INinjectModule[]
             {
-                new MapperModule()
+                new MapperModule(),
+                new DataServiceModule(),
             });
         }        
     }

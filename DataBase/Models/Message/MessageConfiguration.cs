@@ -6,6 +6,7 @@ namespace DataBase.Models.Message
     {
         public MessageConfiguration()
         {
+            ToTable("Message");
             HasKey(message => message.Id);
             Property(message => message.DateCreated)
                 .IsRequired();

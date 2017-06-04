@@ -1,105 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 152:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(238);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(16)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/autoprefixer-loader/index.js?browsers=last 2 version!./registration.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/autoprefixer-loader/index.js?browsers=last 2 version!./registration.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 156:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(152);
-__webpack_require__(423);
-
-(function () {
-    function disableRegistrationFormBtns() {
-        var registrationForm = document.forms.registrationForm;
-        registrationForm.elements.submitBtn.disabled = true;
-        registrationForm.elements.cancelBtn.disabled = true;
-    }
-
-    function enableRegistrationFormBtns() {
-        var registrationForm = document.forms.registrationForm;
-        registrationForm.elements.submitBtn.disabled = false;
-        registrationForm.elements.cancelBtn.disabled = false;
-    }
-
-    function registrationBegin() {
-        disableRegistrationFormBtns();
-    }
-
-    function registrationSuccess() {
-        var registrationForm = document.forms.registrationForm;
-        if (registrationForm.getElementsByClassName("field-validation-error").length || registrationForm.getElementsByClassName("validation-summary-errors").length || registrationForm.getElementsByClassName("input-validation-error").length) {
-            enableRegistrationFormBtns();
-        } else {
-            var completeRegistrationMessage = document.createElement("div");
-            completeRegistrationMessage.textContent = "You have successfully registered";
-            completeRegistrationMessage.classList.add("alert", "alert-info", "complete-registration-message");
-            document.body.appendChild(completeRegistrationMessage);
-            setTimeout(function () {
-                completeRegistrationMessage.classList.add("complete-registration-message_hidden");
-            }, 0);
-            setTimeout(function () {
-                completeRegistrationMessage.parentElement.removeChild(completeRegistrationMessage);
-            }, 5000);
-            var homeIndexUrl = registrationForm.dataset.homeIndexUrl;
-            location.assign(homeIndexUrl);
-        }
-    }
-
-    function registrationFail() {
-        enableRegistrationFormBtns();
-    }
-
-    window.registrationBegin = registrationBegin;
-    window.registrationSuccess = registrationSuccess;
-    window.registrationFail = registrationFail;
-})();
-
-/***/ }),
-
-/***/ 238:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(13)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".complete-registration-message {\r\n    position: fixed;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: 0;\r\n    -ms-opacity: 1;\r\n    opacity: 1;\r\n    z-index: 10000;\r\n    transition: opacity 5s ease-in-out;\r\n}\r\n\r\n.complete-registration-message_hidden {\r\n    -ms-opacity: 0;\r\n    opacity: 0;\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 423:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* 
@@ -290,6 +191,105 @@ exports.push([module.i, ".complete-registration-message {\r\n    position: fixed
 }(jQuery));
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+
+/***/ }),
+
+/***/ 153:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(239);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(13)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/autoprefixer-loader/index.js?browsers=last 2 version!./registration.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/autoprefixer-loader/index.js?browsers=last 2 version!./registration.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 156:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(153);
+__webpack_require__(151);
+
+(function () {
+    function disableRegistrationFormBtns() {
+        var registrationForm = document.forms.registrationForm;
+        registrationForm.elements.submitBtn.disabled = true;
+        registrationForm.elements.cancelBtn.disabled = true;
+    }
+
+    function enableRegistrationFormBtns() {
+        var registrationForm = document.forms.registrationForm;
+        registrationForm.elements.submitBtn.disabled = false;
+        registrationForm.elements.cancelBtn.disabled = false;
+    }
+
+    function registrationBegin() {
+        disableRegistrationFormBtns();
+    }
+
+    function registrationSuccess() {
+        var registrationForm = document.forms.registrationForm;
+        if (registrationForm.getElementsByClassName("field-validation-error").length || registrationForm.getElementsByClassName("validation-summary-errors").length || registrationForm.getElementsByClassName("input-validation-error").length) {
+            enableRegistrationFormBtns();
+        } else {
+            var completeRegistrationMessage = document.createElement("div");
+            completeRegistrationMessage.textContent = "You have successfully registered";
+            completeRegistrationMessage.classList.add("alert", "alert-info", "complete-registration-message");
+            document.body.appendChild(completeRegistrationMessage);
+            setTimeout(function () {
+                completeRegistrationMessage.classList.add("complete-registration-message_hidden");
+            }, 0);
+            setTimeout(function () {
+                completeRegistrationMessage.parentElement.removeChild(completeRegistrationMessage);
+            }, 5000);
+            var homeIndexUrl = registrationForm.dataset.homeIndexUrl;
+            location.assign(homeIndexUrl);
+        }
+    }
+
+    function registrationFail() {
+        enableRegistrationFormBtns();
+    }
+
+    window.registrationBegin = registrationBegin;
+    window.registrationSuccess = registrationSuccess;
+    window.registrationFail = registrationFail;
+})();
+
+/***/ }),
+
+/***/ 239:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".complete-registration-message {\r\n    position: fixed;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: 0;\r\n    -ms-opacity: 1;\r\n    opacity: 1;\r\n    z-index: 10000;\r\n    transition: opacity 5s ease-in-out;\r\n}\r\n\r\n.complete-registration-message_hidden {\r\n    -ms-opacity: 0;\r\n    opacity: 0;\r\n}", ""]);
+
+// exports
+
 
 /***/ }),
 

@@ -3,14 +3,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<figure class="header-figure">
-    <figcaption class="header__caption">
-    </figcaption>
-    <img src="~/app/layout/home/content/background.jpg" alt="background" class="header__img"/>
-    <img src="~/app/layout/home/content/animated-sheet.png" alt="animated-sheet" 
-            class="header__animated-sheet"/>
+<div class="header">
+    <div class="header__img"></div>
+    <div class="header__animated-sheet"></div>
     <div class="header__sheet"></div>
-</figure>
+</div>
 <div class="alert alert-info text-center">
     Получите незабываемый опыт путешествий или просто весело проведите
      время в новой компании. Познакомьтесь с новыми людьми.
@@ -24,7 +21,9 @@
             </h1>
         </div>
         <div class="panel-body">
-            <div id="searchCompany" data-users-url="@Url.Action("GetUsers")" data-google-api-key="@ConfigurationManager.AppSettings["GoogleMapsApiKey"]"></div>
+            <div class="company-searcher" 
+                 data-users-url="@Url.Action("GetUsers")" 
+                 data-google-api-key="@ConfigurationManager.AppSettings["GoogleMapsApiKey"]"></div>
         </div>
     </div>
 </div>

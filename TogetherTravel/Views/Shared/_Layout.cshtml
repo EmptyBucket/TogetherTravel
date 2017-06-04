@@ -11,10 +11,12 @@
     var httpContext = HttpContext.Current;
     var isAuthenticated = httpContext.User?.Identity != null && httpContext.User.Identity.IsAuthenticated;
 }
-<nav class="navbar navbar-movable">
+<nav class="navbar navbar-movable"
+     data-account-registration-url="@Url.Action("Registration", "Account")"
+     data-account-login-url="@Url.Action("Login", "Account")">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navMenu">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
                 <span class="fa fa-bars"></span>
             </button>
             <a class="navbar-brand">
@@ -22,9 +24,7 @@
             </a>
         </div>
         <div id="navMenu" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right" id="accountContainer"
-                data-account-registration-url="@Url.Action("Registration", "Account")"
-                data-account-login-url="@Url.Action("Login", "Account")">
+            <ul class="nav navbar-nav navbar-right">
                 @if (isAuthenticated)
                 {
                     <li>
@@ -37,13 +37,13 @@
                 else
                 {
                     <li>
-                        <a href="#" id="loginButton">
+                        <a href="#" class="navbar__login-btn">
                             <i class="fa fa-sign-in"></i>
                             Login
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="registrationButton">
+                        <a href="#" class="navbar__registration-btn">
                             <i class="fa fa-user-plus"></i>
                             Registration
                         </a>

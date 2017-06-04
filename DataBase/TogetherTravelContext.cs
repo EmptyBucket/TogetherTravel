@@ -19,6 +19,10 @@ namespace DataBase
             modelBuilder.Configurations.Add(new UserConfiguration());
             modelBuilder.Configurations.Add(new ChatConfiguration());
             modelBuilder.Configurations.Add(new MessageConfiguration());
+
+            modelBuilder.Entity<IdentityRole>().ToTable("Role");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("UserToRole");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("UserClaim");
         }
 
         public DbSet<Message> Messages { get; set; }

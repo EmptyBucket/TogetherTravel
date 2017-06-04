@@ -6,6 +6,7 @@ namespace DataBase.Models.User
     {
         public UserConfiguration()
         {
+            ToTable("User");
             Property(user => user.FirstName)
                 .IsOptional()
                 .HasMaxLength(200);

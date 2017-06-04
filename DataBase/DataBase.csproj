@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataBase</RootNamespace>
     <AssemblyName>DataBase</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -85,10 +85,11 @@
     <Compile Include="Models\Message\Message.cs" />
     <Compile Include="Models\Message\MessageConfiguration.cs" />
     <Compile Include="Models\User\UserConfiguration.cs" />
+    <Compile Include="Services\IDataService.cs" />
     <Compile Include="TogetherTravelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User\User.cs" />
-    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\UserDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

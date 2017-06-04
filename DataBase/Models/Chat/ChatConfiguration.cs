@@ -6,6 +6,7 @@ namespace DataBase.Models.Chat
     {
         public ChatConfiguration()
         {
+            ToTable("Chat");
             HasKey(chat => chat.Id);
             Property(chat => chat.Name)
                 .IsRequired()

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dcf5cbd-9c86-42c0-b244-831be41ab23f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/TogetherTravel/v15/.suo" afterPath="$PROJECT_DIR$/.vs/TogetherTravel/v15/.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.dll" afterPath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.pdb" afterPath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/obj/Debug/CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/DataBase/obj/Debug/CoreCompileInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.csprojResolveAssemblyReference.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.dll" afterPath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.pdb" afterPath="$PROJECT_DIR$/DataBase/obj/Debug/DataBase.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/DataBase/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bin/DataBase.dll" afterPath="$PROJECT_DIR$/TogetherTravel/bin/DataBase.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bin/DataBase.pdb" afterPath="$PROJECT_DIR$/TogetherTravel/bin/DataBase.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bin/TogetherTravel.dll" afterPath="$PROJECT_DIR$/TogetherTravel/bin/TogetherTravel.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bin/TogetherTravel.pdb" afterPath="$PROJECT_DIR$/TogetherTravel/bin/TogetherTravel.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/obj/Debug/CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/TogetherTravel/obj/Debug/CoreCompileInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.csprojResolveAssemblyReference.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.dll" afterPath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.pdb" afterPath="$PROJECT_DIR$/TogetherTravel/obj/Debug/TogetherTravel.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/App.config" afterPath="$PROJECT_DIR$/DataBase/App.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/DataBase.csproj" afterPath="$PROJECT_DIR$/DataBase/DataBase.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/Models/Chat/ChatConfiguration.cs" afterPath="$PROJECT_DIR$/DataBase/Models/Chat/ChatConfiguration.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/Models/Message/MessageConfiguration.cs" afterPath="$PROJECT_DIR$/DataBase/Models/Message/MessageConfiguration.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/Models/User/UserConfiguration.cs" afterPath="$PROJECT_DIR$/DataBase/Models/User/UserConfiguration.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/TogetherTravelContext.cs" afterPath="$PROJECT_DIR$/DataBase/TogetherTravelContext.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.dll.config" afterPath="$PROJECT_DIR$/DataBase/bin/Debug/DataBase.dll.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel.sln.DotSettings.user" afterPath="$PROJECT_DIR$/TogetherTravel.sln.DotSettings.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/App_Start/NinjectWebCommon.cs" afterPath="$PROJECT_DIR$/TogetherTravel/App_Start/NinjectWebCommon.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/Controllers/HomeController.cs" afterPath="$PROJECT_DIR$/TogetherTravel/Controllers/HomeController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/TogetherTravel.csproj" afterPath="$PROJECT_DIR$/TogetherTravel/TogetherTravel.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/Views/Home/Index.cshtml" afterPath="$PROJECT_DIR$/TogetherTravel/Views/Home/Index.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/Views/Shared/_Layout.cshtml" afterPath="$PROJECT_DIR$/TogetherTravel/Views/Shared/_Layout.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/home/index.js" afterPath="$PROJECT_DIR$/TogetherTravel/app/layout/home/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.js" afterPath="$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/accountRegistration.js" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/accountRegistration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/accountRegistration.js.map" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/accountRegistration.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/common.js.map" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/common.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/homeIndex.js" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/homeIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/homeIndex.js.map" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/homeIndex.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/sharedLayout.js" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/sharedLayout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TogetherTravel/bundles/sharedLayout.js.map" afterPath="$PROJECT_DIR$/TogetherTravel/bundles/sharedLayout.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DataBase/Services/UserService.cs" afterPath="$PROJECT_DIR$/DataBase/Services/UserDataService.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/home/content/animated-sheet.jpg" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/animated-sheet.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/home/content/animated-sheet.png" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/animated-sheet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/home/content/background.jpg" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/background.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/layout/home/index.css" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/header-animator.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/modules/searchCompany/search-company.css" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/company-searcher/company-searcher.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TogetherTravel/app/modules/searchCompany/searchCompany.js" afterPath="$PROJECT_DIR$/TogetherTravel/app/modules/company-searcher/company-searcher.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TogetherTravel" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="NinjectWebCommon.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TogetherTravel/App_Start/NinjectWebCommon.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.navbar-movable</find>
+      <find>navbar-toggle</find>
+      <find>modalContainer</find>
+      <find>accountContainer</find>
+      <find>navbar</find>
+      <find>id</find>
+      <find>navbar-brand</find>
+      <find>toggle</find>
+      <find>navMenu</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/home/HeaderAnimator.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/companySearcher/companySearcher.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/home/headerAnimator.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/home/index.css" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.css" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/nomable-nav-bar/movable-nav-bar_moving.css" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/nomable-nav-bar/movable-nav-bar.css" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/nomable-navbar/movable-navbar.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/layout/home/index.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/company-searcher/company-searcher.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/header-animator.js" />
+        <option value="$PROJECT_DIR$/TogetherTravel/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar.css" />
+        <option value="$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar_moving.css" />
+        <option value="$PROJECT_DIR$/DataBase/Services/IDataService.cs" />
+        <option value="$PROJECT_DIR$/DataBase/Services/UserDataService.cs" />
+        <option value="$PROJECT_DIR$/TogetherTravel/Modules/DataServiceModules.cs" />
+        <option value="$PROJECT_DIR$/TogetherTravel/App_Start/NinjectWebCommon.cs" />
+        <option value="$PROJECT_DIR$/TogetherTravel/Modules/DataServiceModule.cs" />
+        <option value="$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/38E9494F-4913-4236-9394-E9780098B8A0/0e/cbf08735/HttpContext.cs" />
+        <option value="$PROJECT_DIR$/TogetherTravel/Controllers/HomeController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1068" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TogetherTravel (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TogetherTravel" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TogetherTravel (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Projects/RuTravel/TogetherTravel/Controllers/HomeController.cs&#10;keyboard&#9;null&#9;null" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TogetherTravel/TogetherTravel.csproj" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <option name="EXE_PATH" value="C:/Program Files/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:TogetherTravel /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TogetherTravel" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dcf5cbd-9c86-42c0-b244-831be41ab23f" name="Default" comment="" />
+      <created>1496587315168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496587315168</updated>
+      <workItem from="1496587383205" duration="14308000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14308000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1068" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.328934" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.176" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17501318" sideWeight="0.50338167" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32999474" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791877" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41486558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694781" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19768055" sideWeight="0.49661836" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17554033" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.2496" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3296" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3928934" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971373" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/base/body.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/animated-sheet.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/content/animated-sheet.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Views/Home/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/account/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/account/registration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/profile/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/profile/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/layout/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/account/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/layout/account/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/company-searcher/company-searcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding>
+            <element signature="e#35#67#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/header-animator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="180" column="39" lean-forward="true" selection-start-line="180" selection-start-column="39" selection-end-line="180" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/header-animator/header-animator.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/app/modules/movable-navbar/movable-navbar_moving.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/Models/Chat/ChatConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/Services/IDataService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Global.asax">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Migrations/Configuration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Global.asax.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="95" lean-forward="false" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/Services/UserDataService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/38E9494F-4913-4236-9394-E9780098B8A0/0e/cbf08735/HttpContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Modules/DataServiceModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TogetherTravel/App_Start/NinjectWebCommon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

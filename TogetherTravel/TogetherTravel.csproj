@@ -183,6 +183,7 @@
       <DependentUpon>201704191856212_AddUserAndChatAndMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modules\DataServiceModule.cs" />
     <Compile Include="Modules\MapperModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -194,10 +195,17 @@
     <Content Include="app\layout\account\login.css" />
     <Content Include="app\layout\account\login.js" />
     <Content Include="app\layout\home\index.js" />
-    <Content Include="app\layout\layout\layout.css" />
     <Content Include="app\layout\layout\layout.js" />
     <Content Include="app\layout\account\registration.css" />
     <Content Include="app\layout\account\registration.js" />
+    <Content Include="app\modules\header-animator\content\animated-sheet.jpg" />
+    <Content Include="app\modules\header-animator\content\animated-sheet.png" />
+    <Content Include="app\modules\header-animator\content\background.jpg" />
+    <Content Include="app\modules\header-animator\header-animator.js" />
+    <Content Include="app\modules\header-animator\header-animator.css" />
+    <Content Include="app\modules\movable-navbar\movable-navbar.css" />
+    <Content Include="app\modules\movable-navbar\movable-navbar.js" />
+    <Content Include="app\modules\movable-navbar\movable-navbar_moving.css" />
     <Content Include="app\modules\privateChat\actions\privateChat.js" />
     <Content Include="app\modules\privateChat\actionsTypes.js" />
     <Content Include="app\modules\privateChat\components\privateChat\privateChat.jsx" />
@@ -208,17 +216,14 @@
     <Content Include="app\modules\privateChat\reducers\privateChat.js" />
     <Content Include="app\modules\profile\profile.css" />
     <Content Include="app\modules\profile\profile.js" />
-    <Content Include="app\layout\home\content\background.jpg" />
-    <Content Include="app\layout\home\content\animated-sheet.jpg" />
-    <Content Include="app\layout\home\content\animated-sheet.png" />
     <Content Include="app\modules\map\content\m1.png" />
     <Content Include="app\modules\map\content\m2.png" />
     <Content Include="app\modules\map\content\m3.png" />
     <Content Include="app\modules\map\content\m4.png" />
     <Content Include="app\modules\map\content\m5.png" />
-    <Content Include="app\modules\searchCompany\searchCompany.js" />
+    <Content Include="app\modules\company-searcher\company-searcher.js" />
     <Content Include="app\lib\markerclusterer.js" />
-    <Content Include="app\modules\searchCompany\search-company.css" />
+    <Content Include="app\modules\company-searcher\company-searcher.css" />
     <Content Include="bundles\animated-sheet.png" />
     <Content Include="bundles\background.jpg" />
     <Content Include="bundles\common.js" />
@@ -233,7 +238,6 @@
     <Content Include="bundles\sharedLayout.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="app\layout\home\index.css" />
     <Content Include="packages.config" />
     <Content Include=".bootstraprc.json" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -247,8 +251,6 @@
     <Content Include="webpack-assets.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\state\" />
-    <Folder Include="app\theme\" />
     <Folder Include="Hubs\" />
   </ItemGroup>
   <ItemGroup>

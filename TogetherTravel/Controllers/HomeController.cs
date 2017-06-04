@@ -1,15 +1,20 @@
 ﻿using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using DataBase;
+using DataBase.Models.User;
 using DataBase.Services;
-using Microsoft.AspNet.Identity.Owin;
 
 namespace TogetherTravel.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
+        private readonly IDataService<User> _userDataService;
+
+        public HomeController(IDataService<User> userDataService)
+        {
+            _userDataService = userDataService;
+        }
+
         [AllowAnonymous]
         public ActionResult Index() => View();
 
@@ -17,9 +22,7 @@ namespace TogetherTravel.Controllers
         [AllowAnonymous]
         public ActionResult GetUsers()
         {
-            var context = HttpContext.GetOwinContext().Get<TogetherTravelContext>();
-            var userService = new UserService(context);
-            var users = userService.GetUsers()
+            var users = _userDataService.GetAll()
                 .Select(user => new
                 {
                     user.FirstName,
