@@ -13,8 +13,7 @@ export default function(options) {
         var map = new window.google.maps.Map(elem, {
             zoom: 5,
             MapTypeId: window.google.maps.MapTypeId.SATELLITE,
-            maxZoom: 10,
-            minZoom: 2,
+            minZoom: 3,
             center: { lat: 0, lng: 0}
         });
 

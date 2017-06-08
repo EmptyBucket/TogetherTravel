@@ -192,12 +192,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\base\body.css" />
+    <Content Include="app\common\camelCaseToLowerCamelCaseConverter.js" />
     <Content Include="app\layout\account\login.css" />
     <Content Include="app\layout\account\login.js" />
     <Content Include="app\layout\home\index.js" />
     <Content Include="app\layout\layout\layout.js" />
     <Content Include="app\layout\account\registration.css" />
     <Content Include="app\layout\account\registration.js" />
+    <Content Include="app\modules\chat-cluster\acitonsTypes.js" />
     <Content Include="app\modules\header-animator\content\animated-sheet.jpg" />
     <Content Include="app\modules\header-animator\content\animated-sheet.png" />
     <Content Include="app\modules\header-animator\content\background.jpg" />
@@ -206,16 +208,25 @@
     <Content Include="app\modules\movable-navbar\movable-navbar.css" />
     <Content Include="app\modules\movable-navbar\movable-navbar.js" />
     <Content Include="app\modules\movable-navbar\movable-navbar_moving.css" />
-    <Content Include="app\modules\privateChat\actions\privateChat.js" />
-    <Content Include="app\modules\privateChat\actionsTypes.js" />
-    <Content Include="app\modules\privateChat\components\privateChat\privateChat.jsx" />
-    <Content Include="app\modules\privateChat\privateChat.css" />
-    <Content Include="app\modules\privateChat\privateChat.jsx" />
+    <Content Include="app\modules\chat\actions\chatActions.js" />
+    <Content Include="app\modules\chat\actionsTypes.js" />
+    <Content Include="app\modules\chat\components\MessageElement.jsx" />
+    <Content Include="app\modules\chat\components\MessageInputElement.jsx" />
+    <Content Include="app\modules\chat\components\MessageToElement.jsx" />
+    <Content Include="app\modules\chat\components\MessageFromElement.jsx" />
+    <Content Include="app\modules\chat\components\chatComponent.jsx" />
+    <Content Include="app\modules\chat\chat.css" />
+    <Content Include="app\modules\chat\chat.jsx" />
     <Content Include="app\modules\map\map.css" />
     <Content Include="app\modules\map\map.js" />
-    <Content Include="app\modules\privateChat\reducers\privateChat.js" />
-    <Content Include="app\modules\profile\profile.css" />
-    <Content Include="app\modules\profile\profile.js" />
+    <Content Include="app\modules\chat\reducers\chatReducer.js" />
+    <Content Include="app\modules\profile-card\actions\profileCardActions.js" />
+    <Content Include="app\modules\profile-card\actionsTypes.js" />
+    <Content Include="app\modules\profile-card\components\DetailsElement.jsx" />
+    <Content Include="app\modules\profile-card\components\headerElement.jsx" />
+    <Content Include="app\modules\profile-card\components\photoElement.jsx" />
+    <Content Include="app\modules\profile-card\components\profileCardComponent.jsx" />
+    <Content Include="app\modules\profile-card\profile-card.css" />
     <Content Include="app\modules\map\content\m1.png" />
     <Content Include="app\modules\map\content\m2.png" />
     <Content Include="app\modules\map\content\m3.png" />
@@ -224,6 +235,9 @@
     <Content Include="app\modules\company-searcher\company-searcher.js" />
     <Content Include="app\lib\markerclusterer.js" />
     <Content Include="app\modules\company-searcher\company-searcher.css" />
+    <Content Include="app\modules\profile-card\profile-card.jsx" />
+    <Content Include="app\modules\profile-card\reducers\profileCardReducer.js" />
+    <Content Include="app\modules\profile-card\rootReducer.js" />
     <Content Include="bundles\animated-sheet.png" />
     <Content Include="bundles\background.jpg" />
     <Content Include="bundles\common.js" />
@@ -265,7 +279,7 @@
     <Content Include="bundles\fontawesome-webfont.woff" />
     <Content Include="bundles\fontawesome-webfont.woff2" />
     <Content Include="bundles\homeIndex.js.map" />
-    <Content Include="app\modules\privateChat\rootReducer.js" />
+    <Content Include="app\modules\chat\rootReducer.js" />
     <None Include="packages.config" />
     <Content Include="Views\Account\Registration.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
