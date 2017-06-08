@@ -178,9 +178,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs" />
     <Compile Include="MappersProfiles\RegistrationProfile.cs" />
-    <Compile Include="Migrations\201704191856212_AddUserAndChatAndMessage.cs" />
-    <Compile Include="Migrations\201704191856212_AddUserAndChatAndMessage.Designer.cs">
-      <DependentUpon>201704191856212_AddUserAndChatAndMessage.cs</DependentUpon>
+    <Compile Include="Migrations\201706081213137_Init.cs" />
+    <Compile Include="Migrations\201706081213137_Init.Designer.cs">
+      <DependentUpon>201706081213137_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modules\DataServiceModule.cs" />
@@ -277,8 +277,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704191856212_AddUserAndChatAndMessage.resx">
-      <DependentUpon>201704191856212_AddUserAndChatAndMessage.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706081213137_Init.resx">
+      <DependentUpon>201706081213137_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,22 +1,47 @@
 ﻿require("./company-searcher.css");
 import Map from "../map/map.js";
-import Profile from "../profile/profile.js";
+import ProfileCard from "../profileCard/profile-card.js";
 import PrivateChat from "../privateChat/privateChat.jsx";
 
 export default function CompanySearcher(options) {
     const elem = options.elem;
-    const mapElem = document.createElement("div");
     const usersUrl = options.usersUrl;
     const googleApiKey = options.googleApiKey;
+
+    const mapElem = document.createElement("div");
     const profileElem = document.createElement("div");
     const privateChatElem = document.createElement("div");
 
-    function cancelSelectUser() {
-
-    }
+    const myCompanyes = [];
 
     function selectUser(e) {
-        console.log(e);
+        const userId = this.get("userId");
+        fetch(`${options.userUrl}?userId=${userId}`, { method: "POST" })
+            .then(user => {
+                var searchUser = myCompanyes.find(item => item.userId);
+                if (!searchUser) {
+                    searchUser = {
+                        userId: userId,
+                        profileCard: new ProfileCard({
+                            elem: profileElem,
+                            user: user
+                        })
+                    };
+                    myCompanyes.push(searchUser);   
+                }
+                searchUser.profileCard.render();
+            });
+        $(elem)
+            .html("")
+            .append($("<div>", { "class": "container-fluid" })
+                .append($("<div>", { "class": "row" })
+                    .append($("<div>", { "class": "col-xs-6" })
+                        .append(mapElem))
+                    .append($("<div>", { "class": "col-xs-6" })
+                        .append(profileElem)))
+                .append($("<div>", { "class": "row" })
+                    .append($("<div>", { "class": "col-xs-12" })
+                        .append(privateChatElem))));
     }
 
     function render() {
@@ -28,9 +53,6 @@ export default function CompanySearcher(options) {
             usersUrl: usersUrl,
             googleApiKey: googleApiKey,
             markerClick: selectUser
-        });
-        const profile = new Profile({
-            elem: profileElem
         });
         //const privateChat = new PrivateChat({
         //    elem: privateChatElem

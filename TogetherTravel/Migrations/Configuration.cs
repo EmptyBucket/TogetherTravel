@@ -9,16 +9,21 @@ namespace TogetherTravel.Migrations
 {
     internal sealed class Configuration : DbMigrationsConfiguration<TogetherTravelContext>
     {
+        private readonly bool _hasPendingMigrations;
+
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
             ContextKey = "DataBase.DataBase.TogetherTravel";
+            var dbMigrator = new DbMigrator(this);
+            _hasPendingMigrations = dbMigrator.GetPendingMigrations().Any();
         }
 
         protected override void Seed(TogetherTravelContext context)
         {
             base.Seed(context);
-            const int userCount = 1000;
+            if (!_hasPendingMigrations) return;
+            const int userCount = 10;
             var personNameGenerator = new RandomNameGeneratorLibrary.PersonNameGenerator();
             var names = personNameGenerator.GenerateMultipleFirstAndLastNames(userCount);
             var random = new Random();
@@ -48,13 +53,13 @@ namespace TogetherTravel.Migrations
             foreach (var user in users)
                 context.Users.Add(user);
 
-            //var roles = new[]
-            //{
-            //    new IdentityRole("Admin"),
-            //    new IdentityRole("User")
-            //};
-            //foreach (var role in roles)
-            //    context.Roles.Add(role);
+            var roles = new[]
+            {
+                new IdentityRole("Admin"),
+                new IdentityRole("User")
+            };
+            foreach (var role in roles)
+                context.Roles.Add(role);
 
             context.SaveChanges();
         }

@@ -25,6 +25,7 @@ namespace TogetherTravel.Controllers
             var users = _userDataService.GetAll()
                 .Select(user => new
                 {
+                    user.Id,
                     user.FirstName,
                     user.SecondName,
                     user.LatitudeCoord,

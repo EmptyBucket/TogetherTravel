@@ -190,7 +190,7 @@ E:\Projects\TogetherTravel\TogetherTravel\bin\System.Web.WebPages.Razor.xml
 E:\Projects\TogetherTravel\TogetherTravel\bin\ru\EntityFramework.resources.dll
 E:\Projects\TogetherTravel\TogetherTravel\bin\ru\EntityFramework.SqlServer.resources.dll
 E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.csprojResolveAssemblyReference.cache
-E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.Migrations.AddUserAndChatAndMessage.resources
-E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.csproj.GenerateResource.Cache
 E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.dll
 E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.pdb
+E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.Migrations.Init.resources
+E:\Projects\TogetherTravel\TogetherTravel\obj\Debug\TogetherTravel.csproj.GenerateResource.Cache

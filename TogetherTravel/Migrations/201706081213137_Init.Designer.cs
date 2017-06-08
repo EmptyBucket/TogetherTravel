@@ -7,13 +7,13 @@ namespace TogetherTravel.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddUserAndChatAndMessage : IMigrationMetadata
+    public sealed partial class Init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddUserAndChatAndMessage));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704191856212_AddUserAndChatAndMessage"; }
+            get { return "201706081213137_Init"; }
         }
         
         string IMigrationMetadata.Source

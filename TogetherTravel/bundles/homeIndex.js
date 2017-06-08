@@ -22117,10 +22117,8 @@ function CompanySearcher(options) {
     var profileElem = document.createElement("div");
     var privateChatElem = document.createElement("div");
 
-    function cancelSelectUser() {}
-
     function selectUser(e) {
-        console.log(e);
+        var userId = this.get("userId");
     }
 
     function render() {
@@ -22262,30 +22260,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = Map;
-__webpack_require__(402);
-var MarkerClusterer = __webpack_require__(248);
-var ClusterMarkerImageUrl = __webpack_require__(265);
-ClusterMarkerImageUrl = ClusterMarkerImageUrl.slice(0, ClusterMarkerImageUrl.length - 5);
-var RequireContext = __webpack_require__(154);
-RequireContext.keys().map(RequireContext);
 
-function Map(options) {
-    var mapElem = options.elem;
-    var googleApiKey = options.googleApiKey;
-    var usersUrl = options.usersUrl;
-    var markerClick = options.markerClick;
-    var markers = [];
+var _toConsumableArray2 = __webpack_require__(178);
+
+var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
+
+exports.default = function (options) {
+    var elem = options.elem;
+    var usersMarkers = [];
 
     function initMap() {
-        var map = new google.maps.Map(mapElem, {
-            zoom: 2,
-            MapTypeId: google.maps.MapTypeId.SATELLITE,
+        var map = new window.google.maps.Map(elem, {
+            zoom: 5,
+            MapTypeId: window.google.maps.MapTypeId.SATELLITE,
             maxZoom: 10,
             minZoom: 2,
             center: { lat: 0, lng: 0 }
@@ -22294,37 +22286,45 @@ function Map(options) {
         navigator.geolocation.getCurrentPosition(function (e) {
             var center = { lat: e.coords.latitude, lng: e.coords.longitude };
             map.setCenter(center);
-            var marker = new google.maps.Marker({
+            var marker = new window.google.maps.Marker({
                 position: center,
                 map: map,
                 draggable: false,
                 label: "Вы"
             });
-            markers.push(marker);
+            usersMarkers.push(marker);
         });
 
-        $.post(usersUrl, function (e) {
-            var usersMarkers = e.map(function (user) {
-                return new google.maps.Marker({
-                    position: { lat: user.LatitudeCoord, lng: user.LongitudeCoord },
+        fetch(options.usersUrl, { method: "POST" }).then(function (response) {
+            return response.json();
+        }).then(function (array) {
+            return array.map(function (user) {
+                var marker = new window.google.maps.Marker({
+                    position: {
+                        lat: user.LatitudeCoord,
+                        lng: user.LongitudeCoord
+                    },
                     label: user.FirstName + " " + user.SecondName,
                     draggable: false
                 });
+                marker.set("userId", user.Id);
+                return marker;
             });
-            Array.prototype.push.apply(markers, usersMarkers);
-            var clustererMarker = new MarkerClusterer(map, usersMarkers, {
+        }).then(function (e) {
+            usersMarkers.push.apply(usersMarkers, (0, _toConsumableArray3.default)(e));
+            var markerClusterer = new MarkerClusterer(map, usersMarkers, {
                 imagePath: ClusterMarkerImageUrl
             });
-            markers.forEach(function (item) {
-                item.addListener("click", markerClick);
+            usersMarkers.forEach(function (item) {
+                return item.addListener("click", options.markerClick);
             });
         });
     }
 
     function render() {
-        mapElem.classList.add("map");
+        elem.classList.add("map");
 
-        var src = "https://maps.googleapis.com/maps/api/js?key=" + googleApiKey + "&callback=initMap";
+        var src = "https://maps.googleapis.com/maps/api/js\n?key=" + options.googleApiKey + "&callback=initMap";
 
         var googleApiScript = document.createElement("script");
         googleApiScript.src = src;
@@ -22336,8 +22336,16 @@ function Map(options) {
     }
 
     render();
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+};
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(402);
+var MarkerClusterer = __webpack_require__(248);
+var ClusterMarkerImageUrl = __webpack_require__(265);
+ClusterMarkerImageUrl = ClusterMarkerImageUrl.slice(0, ClusterMarkerImageUrl.length - 5);
+var RequireContext = __webpack_require__(154);
+RequireContext.keys().map(RequireContext);
 
 /***/ }),
 /* 159 */,
